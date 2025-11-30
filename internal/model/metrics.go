@@ -17,3 +17,9 @@ type Metrics struct {
 	Value *float64 `json:"value,omitempty"`
 	Hash  string   `json:"hash,omitempty"`
 }
+
+type MemStorage struct {
+	gauges   map[string]float64
+	counters map[string]int64
+	// В будущем можно добавить дополнительные поля
+}
